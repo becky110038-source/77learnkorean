@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究著作 | 楊珮琪 Yang Pei-Chi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F5F1E8;--khaki:#C9B79C;--coffee:#8B7355;--ink:#2B2B29;--muted:#5f5e5a;--white:#FFFFFF;--max:920px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream);color:var(--ink);font-family:"Noto Sans TC","Noto Sans KR",Inter,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  [data-lang="zh"] .ko, [data-lang="zh"] .en { display:none; }
+  [data-lang="ko"] .zh, [data-lang="ko"] .en { display:none; }
+  [data-lang="en"] .zh, [data-lang="en"] .ko { display:none; }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  header{position:sticky;top:0;z-index:10;background:rgba(245,241,232,0.92);backdrop-filter:blur(6px);border-bottom:0.5px solid rgba(139,115,85,0.25);}
+  nav.wrap{display:flex;justify-content:space-between;align-items:center;height:64px;font-size:13px;letter-spacing:0.5px;color:var(--coffee);}
+  .brand{font-weight:600;color:var(--ink);letter-spacing:1px;}
+  .nav-links{display:flex;gap:28px;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-links a.current{color:var(--ink);font-weight:600;}
+  .lang-switch{display:flex;gap:4px;border-left:0.5px solid var(--khaki);padding-left:18px;margin-left:6px;}
+  .lang-btn{font-size:11px;padding:5px 11px;border-radius:14px;border:none;background:transparent;color:var(--coffee);cursor:pointer;font-family:inherit;}
+  .lang-btn.active{background:var(--coffee);color:var(--cream);}
+  .lang-btn:hover:not(.active){background:rgba(139,115,85,0.12);}
+  nav.wrap{position:relative;}
+  .brand-group{display:flex;align-items:center;gap:8px;}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--ink);}
+  .menu-toggle svg{width:20px;height:20px;display:block;}
+  @media(max-width:640px){
+    .menu-toggle{display:block;}
+    .nav-links{
+      display:none;position:absolute;top:100%;left:24px;right:24px;
+      flex-direction:column;gap:0;background:var(--cream);
+      border:0.5px solid rgba(139,115,85,0.25);border-top:none;
+      border-radius:0 0 10px 10px;padding:4px 4px 8px;
+    }
+    .nav-links.open{display:flex;}
+    .nav-links a{padding:12px 10px;border-bottom:0.5px solid rgba(139,115,85,0.15);}
+    .nav-links a:last-child{border-bottom:none;}
+  }
+  section{padding:64px 0;}
+  .section-title{font-size:11px;letter-spacing:2px;color:var(--coffee);text-transform:uppercase;margin-bottom:28px;}
+  .pub-card{background:var(--white);border-radius:12px;padding:20px 24px;border-left:3px solid var(--coffee);margin-bottom:12px;}
+  .pub-meta{font-size:11px;letter-spacing:1px;color:var(--coffee);text-transform:uppercase;margin-bottom:8px;}
+  .pub-title{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:6px;}
+  .pub-authors{font-size:13px;color:var(--muted);}
+  footer{padding:32px 0;text-align:center;font-size:12px;color:var(--coffee);}
+  
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand-group">
+      <button class="menu-toggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+      <a href="index.html" class="brand">YANG PEI-CHI</a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html"><span class="zh">關於我</span><span class="ko">소개</span><span class="en">About</span></a>
+      <a href="research.html" class="current"><span class="zh">研究著作</span><span class="ko">연구·저작</span><span class="en">Research</span></a>
+      <a href="contact.html"><span class="zh">聯絡</span><span class="ko">연락처</span><span class="en">Contact</span></a>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn" data-set="zh">中</button>
+      <button class="lang-btn" data-set="ko">한국어</button>
+      <button class="lang-btn" data-set="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="section-title"><span class="zh">學術著作</span><span class="ko">학술 저작</span><span class="en">Publications</span></p>
+
+    <div class="pub-card">
+      <p class="pub-meta"><span class="zh">研討會論文 · 2026.07</span><span class="ko">학술대회 논문 · 2026.07</span><span class="en">Conference Paper · Jul 2026</span></p>
+      <p class="pub-title">
+        <span class="zh">韓語教學之共同行動提議言語行為分析:以「-(으)ㄹ까요?」、「-(으)ㄹ래요?」疑問句為中心</span>
+        <span class="ko">한국어 교육에서의 공동 행동 제안 화행 분석—'-(으)ㄹ까요?', '-(으)ㄹ래요?' 의문문을 중심으로</span>
+        <span class="en">An Analysis of Joint-Action Proposal Speech Acts in Korean Language Teaching: Focusing on the Interrogatives “-(eu)lkkayo?” and “-(eu)llaeyo?”</span>
+      </p>
+      <p class="pub-authors">
+        <span class="zh">楊珮琪、陳冠超 · 《2026第18屆ISKAL國際學術會議發表論文集》,國際韓語應用語言學會,pp.295-300</span>
+        <span class="ko">양페이치, 진관초 · 《2026년 제18회 ISKAL 국제학술대회 발표논문집》, 국제한국어응용언어학회, pp.295-300</span>
+        <span class="en">Yang, P.-C., &amp; Chen, K.-C. · Proceedings of the 18th ISKAL International Conference, International Society of Korean Language Applied Linguistics, pp. 295–300</span>
+      </p>
+    </div>
+
+    <div class="pub-card">
+      <p class="pub-meta"><span class="zh">學位論文 · 2024.12</span><span class="ko">학위논문 · 2024.12</span><span class="en">Master's Thesis · Dec 2024</span></p>
+      <p class="pub-title">
+        <span class="zh">臺灣韓語學習者問候言語行為應答研究——以「禮貌邀請」與「禮貌約定」為例</span>
+        <span class="ko">대만 한국어 학습자의 인사 화행 응답 연구—'공손한 초대'와 '공손한 약속'을 중심으로</span>
+        <span class="en">A study on the responses of Taiwanese Korean learners to greeting speech acts—focusing on ‘courteous request’ and ‘courteous commission’</span>
+      </p>
+      <p class="pub-authors">
+        <span class="zh">楊珮琪 · 國立政治大學碩士學位論文</span>
+        <span class="ko">양페이치 · 국립정치대학교 석사학위논문</span>
+        <span class="en">Yang, P.-C. · Master's Thesis, National Chengchi University</span>
+      </p>
+    </div>
+
+    <div class="pub-card">
+      <p class="pub-meta"><span class="zh">專書 · 2022</span><span class="ko">전공서 · 2022</span><span class="en">Book · 2022</span></p>
+      <p class="pub-title">
+        <span class="zh">《寫過就不忘!韓文自學達人的單字整理術:「77的韓文筆記」教你活用資源、寫出自己的韓文筆記、克服學習難關》</span>
+        <span class="ko">《쓰면 잊지 않는다! 한국어 독학 달인의 단어 정리법: '77의 한글노트'가 알려주는 자원 활용법, 나만의 한국어 노트 쓰기, 학습 난관 극복하기》</span>
+        <span class="en">“Write It and You Won't Forget It! A Self-Study Master's Guide to Organizing Korean Vocabulary: ‘77's Korean Notes’ Teaches You to Use Resources, Write Your Own Notes, and Overcome Learning Obstacles”</span>
+      </p>
+      <p class="pub-authors">
+        <span class="zh">采實文化出版</span><span class="ko">採實文化(Acme Publishing)</span><span class="en">Acme Publishing</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="zh">© 2026 楊珮琪 Yang Pei-Chi</span>
+  <span class="ko">© 2026 양페이치 Yang Pei-Chi</span>
+  <span class="en">© 2026 Yang Pei-Chi</span>
+</footer>
+
+<script>
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll('.lang-btn');
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navLinksEl = document.querySelector('.nav-links');
+  if (menuToggle && navLinksEl) {
+    menuToggle.addEventListener('click', function(){ navLinksEl.classList.toggle('open'); });
+    navLinksEl.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinksEl.classList.remove('open'); });
+    });
+  }
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    buttons.forEach(function(b){ b.classList.toggle('active', b.dataset.set === lang); });
+    try { localStorage.setItem('site-lang', lang); } catch(e){}
+  }
+  buttons.forEach(function(btn){ btn.addEventListener('click', function(){ setLang(btn.dataset.set); }); });
+  setLang(localStorage.getItem('site-lang') || 'zh');
+</script>
+
+</body>
+</html>

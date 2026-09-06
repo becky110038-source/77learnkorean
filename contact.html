@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯絡 | 楊珮琪 Yang Pei-Chi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F5F1E8;--khaki:#C9B79C;--coffee:#8B7355;--ink:#2B2B29;--muted:#5f5e5a;--white:#FFFFFF;--max:920px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream);color:var(--ink);font-family:"Noto Sans TC","Noto Sans KR",Inter,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  [data-lang="zh"] .ko, [data-lang="zh"] .en { display:none; }
+  [data-lang="ko"] .zh, [data-lang="ko"] .en { display:none; }
+  [data-lang="en"] .zh, [data-lang="en"] .ko { display:none; }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  header{position:sticky;top:0;z-index:10;background:rgba(245,241,232,0.92);backdrop-filter:blur(6px);border-bottom:0.5px solid rgba(139,115,85,0.25);}
+  nav.wrap{display:flex;justify-content:space-between;align-items:center;height:64px;font-size:13px;letter-spacing:0.5px;color:var(--coffee);}
+  .brand{font-weight:600;color:var(--ink);letter-spacing:1px;}
+  .nav-links{display:flex;gap:28px;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-links a.current{color:var(--ink);font-weight:600;}
+  .lang-switch{display:flex;gap:4px;border-left:0.5px solid var(--khaki);padding-left:18px;margin-left:6px;}
+  .lang-btn{font-size:11px;padding:5px 11px;border-radius:14px;border:none;background:transparent;color:var(--coffee);cursor:pointer;font-family:inherit;}
+  .lang-btn.active{background:var(--coffee);color:var(--cream);}
+  .lang-btn:hover:not(.active){background:rgba(139,115,85,0.12);}
+  nav.wrap{position:relative;}
+  .brand-group{display:flex;align-items:center;gap:8px;}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--ink);}
+  .menu-toggle svg{width:20px;height:20px;display:block;}
+  @media(max-width:640px){
+    .menu-toggle{display:block;}
+    .nav-links{
+      display:none;position:absolute;top:100%;left:24px;right:24px;
+      flex-direction:column;gap:0;background:var(--cream);
+      border:0.5px solid rgba(139,115,85,0.25);border-top:none;
+      border-radius:0 0 10px 10px;padding:4px 4px 8px;
+    }
+    .nav-links.open{display:flex;}
+    .nav-links a{padding:12px 10px;border-bottom:0.5px solid rgba(139,115,85,0.15);}
+    .nav-links a:last-child{border-bottom:none;}
+  }
+  section{padding:64px 0;}
+  .section-title{font-size:11px;letter-spacing:2px;color:var(--coffee);text-transform:uppercase;margin-bottom:10px;}
+  .subtitle{font-size:13px;color:var(--muted);margin-bottom:6px;}
+  .section-heading{font-size:20px;font-weight:600;margin-bottom:28px;}
+  .contact-links{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;}
+  .contact-link{background:var(--white);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;}
+  .contact-icon{width:32px;height:32px;border-radius:50%;background:rgba(139,115,85,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:var(--coffee);font-weight:600;}
+  .contact-detail-label{font-size:11px;color:var(--coffee);margin-bottom:2px;}
+  .contact-detail-value{font-size:13px;color:var(--ink);}
+  form{background:var(--white);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:14px;}
+  input, select, textarea{width:100%;font-size:14px;font-family:inherit;padding:11px 14px;border-radius:8px;border:0.5px solid rgba(139,115,85,0.35);background:var(--cream);color:var(--ink);}
+  textarea{min-height:100px;resize:vertical;}
+  input:focus, select:focus, textarea:focus{outline:none;border-color:var(--coffee);}
+  button.submit{align-self:flex-start;background:var(--coffee);color:var(--cream);border:none;padding:11px 26px;border-radius:20px;font-size:13px;font-family:inherit;cursor:pointer;}
+  button.submit:hover{background:#775f47;}
+  footer{padding:32px 0;text-align:center;font-size:12px;color:var(--coffee);}
+  
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand-group">
+      <button class="menu-toggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+      <a href="index.html" class="brand">YANG PEI-CHI</a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html"><span class="zh">關於我</span><span class="ko">소개</span><span class="en">About</span></a>
+      <a href="research.html"><span class="zh">研究著作</span><span class="ko">연구·저작</span><span class="en">Research</span></a>
+      <a href="contact.html" class="current"><span class="zh">聯絡</span><span class="ko">연락처</span><span class="en">Contact</span></a>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn" data-set="zh">中</button>
+      <button class="lang-btn" data-set="ko">한국어</button>
+      <button class="lang-btn" data-set="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="section-title">Contact</p>
+    <p class="subtitle">
+      <span class="zh">有關課程諮詢、演講邀約、媒體合作、學術交流等</span>
+      <span class="ko">강좌 문의, 강연 요청, 미디어 협업, 학술 교류 등</span>
+      <span class="en">For course inquiries, speaking invitations, media collaboration, academic exchange, and more</span>
+    </p>
+    <p class="section-heading">
+      <span class="zh">歡迎與我聯繫</span><span class="ko">언제든 연락 주세요</span><span class="en">Get in touch</span>
+    </p>
+
+    <div class="contact-links">
+      <div class="contact-link">
+        <div class="contact-icon">@</div>
+        <div>
+          <p class="contact-detail-label"><span class="zh">學術相關合作邀約</span><span class="ko">학술 관련 협업 문의</span><span class="en">Academic collaboration</span></p>
+          <p class="contact-detail-value">peichi77@nccu.edu.tw</p>
+        </div>
+      </div>
+      <div class="contact-link">
+        <div class="contact-icon">@</div>
+        <div>
+          <p class="contact-detail-label"><span class="zh">社群相關合作邀約</span><span class="ko">소셜 미디어 관련 협업 문의</span><span class="en">Social &amp; media collaboration</span></p>
+          <p class="contact-detail-value">happylearnkorean@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-link">
+        <div class="contact-icon">IG</div>
+        <div>
+          <p class="contact-detail-label">Instagram</p>
+          <p class="contact-detail-value">@77learnkorean</p>
+        </div>
+      </div>
+      <div class="contact-link">
+        <div class="contact-icon">Th</div>
+        <div>
+          <p class="contact-detail-label">Threads</p>
+          <p class="contact-detail-value">@77learnkorean</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-title">
+      <span class="zh">聯絡楊珮琪（77）</span>
+      <span class="ko">양페이치(77)에게 연락하기</span>
+      <span class="en">Contact Yang Pei-Chi (77)</span>
+    </p>
+    <form onsubmit="event.preventDefault(); alert('Demo form — connect this to your email service or a form backend.');">
+      <input type="email" required placeholder="Email">
+      <input type="text" required id="name-field">
+      <input type="text" id="social-field">
+      <select id="inquiry-type"></select>
+      <textarea id="message-field"></textarea>
+      <button type="submit" class="submit">
+        <span class="zh">送出訊息</span><span class="ko">보내기</span><span class="en">Send message</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span class="zh">© 2026 楊珮琪 Yang Pei-Chi</span>
+  <span class="ko">© 2026 양페이치 Yang Pei-Chi</span>
+  <span class="en">© 2026 Yang Pei-Chi</span>
+</footer>
+
+<script>
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll('.lang-btn');
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navLinksEl = document.querySelector('.nav-links');
+  if (menuToggle && navLinksEl) {
+    menuToggle.addEventListener('click', function(){ navLinksEl.classList.toggle('open'); });
+    navLinksEl.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinksEl.classList.remove('open'); });
+    });
+  }
+
+  var i18n = {
+    zh: { name: '姓名', social: 'IG / Threads / Line ID', message: '想跟我說的話...', options: ['課程諮詢', '演講邀約', '媒體合作', '學術交流'] },
+    ko: { name: '이름', social: 'IG / Threads / Line ID', message: '하고 싶은 말을 남겨주세요...', options: ['강좌 문의', '강연 요청', '미디어 협업', '학술 교류'] },
+    en: { name: 'Name', social: 'IG / Threads / Line ID', message: 'Message', options: ['Course inquiry', 'Speaking invitation', 'Media collaboration', 'Academic exchange'] }
+  };
+
+  var nameField = document.getElementById('name-field');
+  var socialField = document.getElementById('social-field');
+  var messageField = document.getElementById('message-field');
+  var inquirySelect = document.getElementById('inquiry-type');
+
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    buttons.forEach(function(b){ b.classList.toggle('active', b.dataset.set === lang); });
+    var t = i18n[lang];
+    nameField.placeholder = t.name;
+    socialField.placeholder = t.social;
+    messageField.placeholder = t.message;
+    inquirySelect.innerHTML = t.options.map(function(o){ return '<option>' + o + '</option>'; }).join('');
+    try { localStorage.setItem('site-lang', lang); } catch(e){}
+  }
+
+  buttons.forEach(function(btn){ btn.addEventListener('click', function(){ setLang(btn.dataset.set); }); });
+  setLang(localStorage.getItem('site-lang') || 'zh');
+</script>
+
+</body>
+</html>
